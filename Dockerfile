@@ -2,4 +2,4 @@ FROM openjdk:17
 WORKDIR /app
 COPY . .
 EXPOSE 8080
-CMD ["java", "-jar", "chat.jar"]
+CMD ["java", "-jar", "Chat.jar"]
