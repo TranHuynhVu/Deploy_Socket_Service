@@ -1,5 +1,6 @@
-FROM openjdk:17
-WORKDIR /app
-COPY . .
+FROM openjdk:17-jdk-slim
+COPY Chat.jar Chat.jar
+COPY start.sh start.sh
+RUN chmod +x start.sh
 EXPOSE 8080
-CMD ["java", "-jar", "Chat.jar"]
+CMD ["./start.sh"]
